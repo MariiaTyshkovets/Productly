@@ -8,6 +8,7 @@
     src: url("../fonts/Poppins-Medium.ttf") format("ttf");
     src: url("../fonts/Poppins-Regular.ttf") format("ttf");
     src: url("../fonts/Poppins-SemiBold.ttf") format("ttf");
+    src: url("../fonts/Poppins-Thin.ttf") format("ttf");
 }
 
 body {
