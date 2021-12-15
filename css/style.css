@@ -20,11 +20,10 @@ body {
 }
 
 .header {
-    margin-top: 20px;
     width: 100%;
-    height: 78px;
+    height: 98px;
     display: inline-block;
-    padding: 15px 10.35% 17px;
+    padding: 35px 10.35% 17px;
     position: relative;
     margin-bottom: 30px;
 }
@@ -35,7 +34,7 @@ body {
 
 nav {
     position: absolute;
-    top: 25px;
+    top: 45px;
     right: 400px;
 }
 
@@ -49,7 +48,7 @@ nav {
 
 .header img {
     position: absolute;
-    top: 22px;
+    top: 42px;
 }
 
 .header form {
