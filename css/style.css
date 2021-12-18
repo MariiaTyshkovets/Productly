@@ -13,8 +13,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
     box-sizing: border-box;
     background-color: white;;
 }
@@ -22,49 +22,43 @@ body {
 .header {
     width: 100%;
     height: 98px;
-    display: inline-block;
-    padding: 35px 10.35% 17px;
-    position: relative;
+    padding: 0 10.35%;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.inline-block {
-    display: inline-block;
-}
-
-nav {
-    position: absolute;
-    top: 45px;
-    right: 400px;
-}
-
-.nav-list li {
-    display: inline-block;
-    color: #2F281E;
-    font-size: 14px;
-    margin-right: 15px;
-    vertical-align: middle;
+.nav {
+    flex: 1;
 }
 
 .header img {
-    position: absolute;
-    top: 42px;
+    width: 22%;
+    margin-right: 10px;
+    min-width: 100px;
 }
 
-.header form {
-    float: right;
+.nav-list {
+    display: flex;
+    justify-content: right;
+}
+
+.nav-list li {
+    color: #2F281E;
+    font-size: 14px;
+    margin-right: 15px;
 }
 
 .btn {
     font-weight: 600;
-    font-size: 16px;
     background-color: #FF9900;
     border-radius: 4px;
     height: 46px;
     text-decoration: none;
     color: white;
     border: 1px solid #FF9900;
-    margin-left: 14px;
+    cursor: pointer;
 }
 
 .btn a, .nav-list li a {
@@ -78,65 +72,199 @@ nav {
     color: #000;
 
 }
+
 .right {
     width: 110px;
+    margin-left: 14px;
 }
 
 .left {
     width: 102px;
+    margin-left: 14px;
 }
 
 .main {
-    margin: 0 9.26% 0 10.35%;
-    padding-top: 80px;
-    position: relative;
+    padding: 0 9.26% 0 10.35%;
 }
 
 .first-section {
-    max-height: 495px;
+    max-height: 550px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.main h2 {
+.first-section h2 {
+    padding-top: 5%;
     font-size: 44px;
     font-weight: 700;
     line-height: 54px;
-    max-width: 518px;
+    max-width: 50%;
     margin-bottom: 30px;
 }
 
 .first-section p {
-    width: 458px;
+    max-width: 50%;
     line-height: 28px;
     margin-bottom: 45px;
+    font-size: 18px;
 }
 
-.first-section .btn {
-    margin-left: 0;
+.get-started {
+    display: flex;
+    align-items: center;
+}
+
+.first-section .get-started .btn {
     margin-right: 30px;
     width: 175px;
 }
 
-.first-section form {
-    position: relative;
+.first-section .get-started img {
+    margin-right: 10px;
 }
 
-.first-section form img {
-    position: absolute;
-    top: calc(50% - 8.5px);
-}
-
-.first-section form a {
+.first-section .get-started>a {
     color: #FF9900;
     width: 135px;
     line-height: 24px;
-    position: absolute;
-    top: calc(50% - 10px);
-    left: calc(175px + 30px + 20px + 8px);
 }
 
 .img-with-people {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
+    align-self: flex-end;
+    width: 50%;
+}
+
+.second-section {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.tools {
+    display: flex;
+    text-align: left;
+}
+
+.tool {
+    width: 25%;
+    padding: 0 20px 60px;
+}
+
+.second-section h3  {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    width: 100%;
+    padding: 70px;
+    text-align: center;
+}
+
+.second-section h4 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 13px;
+}
+
+.second-section img {
+    margin-bottom: 30px;
+}
+
+.second-section p {
+    font-weight: 500;
+    font-size: 16px; 
+    line-height: 26px;
+}
+
+.second-section .btn {
+    width: 175px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.section article {
+    width: 50%;
+}
+
+.section img {
+    width: 50%;
+}
+
+.section h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    margin: 0 0 22px;
+}
+
+.section h5 {
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 12px;
+}
+
+.section p {
+    margin-bottom: 25px;
+}
+
+.fourth-section article {
+    padding-left: 8%;
+}
+
+.fourth-section article > img {
+    width: 35px;
+    margin: 5px 30px 0 0;
+    float: left;
+}
+.footer {
+    border-top: rgba(188, 208, 229, 0.4969) solid 1px;
+    margin: 0 9.26% 0 10.35%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 390px;
+    padding: 102px 0 80px 0;
+}
+
+.footer img {
+    width: 22%;
+    min-width: 100px;
+    align-self: flex-start;
+    margin-right: 40px;
+}
+
+.footer .btn {
+    height: 39px;
+    font-weight: 700;
+    width: 131px;
+}
+
+.input {
+    height: 48px;
+    min-width: 212px;
+    width: 100%;
+    padding: 10px 15px;
+    border: rgba(188, 208, 229, 0.4969) solid 1px;
+    border-radius: 4px;
+    margin-bottom: 21px;
+}
+
+.footer ul {
+    margin-right: 10px;
+    width: max-content;
+    width: 18%;
+}
+
+.footer li {
+    line-height: 36px;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: inherit;
 }
